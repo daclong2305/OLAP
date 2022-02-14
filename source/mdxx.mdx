@@ -1,0 +1,118 @@
+﻿--1 Roll up Liệt kê tổng số review nhà phê bình trên Metacritic của các album theo từng ngày  
+select non empty [Measures].[Metacritic Reviews] on columns,
+non empty [Dim Album].[Release Day].children on rows
+from [QL Album];
+--2 Drill down Liệt kê tổng số review nhà phê bình trên Metacritic của các album theo từng ngày theo từng tháng
+select non empty [Measures].[Metacritic Reviews] on columns,
+non empty [Dim Album].[Release Day].children * [Dim Album].[Release Month].children on rows
+from [QL Album];
+--3 Roll up Liệt kê tổng số review người dùng trên Metacritic của các album theo từng tháng 
+select non empty [Measures].[Metacritic User Reviews] on columns,
+non empty [Dim Album].[Release Month].children on rows
+from [QL Album];
+--4 Drill down Liệt kê tổng số review người dùng trên Metacritic của các album theo từng tháng theo từng năm
+select non empty [Measures].[Metacritic User Reviews] on columns,
+non empty [Dim Album].[Release Month].children * [Dim Album].[Release Year].children on rows
+from [QL Album];
+--5 Roll up Liệt kê điểm đánh giá review cao nhất của các album và tên album theo từng ngày
+select non empty [Measures].[Maximum Rating] on columns,
+non empty [Dim Album].[Release Day].children * [Dim Album].[Title].children on rows
+from [QL Album];
+--6 Drill down Liệt kê điểm đánh giá review cao nhất của các album và tên album theo từng ngày theo từng năm
+select non empty [Measures].[Maximum Rating] on columns,
+non empty [Dim Album].[Release Day].children * [Dim Album].[Release Year].children * [Dim Album].[Title].children on rows
+from [QL Album];
+--7 Roll up Liệt kê tổng số review nhà phê bình trên AOTY của các album theo từng ngày
+select non empty [Measures].[AOTY Critic Reviews] on columns,
+non empty [Dim Album].[Release Day].children on rows
+from [QL Album];
+--8 Drill down Liệt kê tổng số review nhà phê bình AOTY của các album theo từng ngày theo từng tháng
+select non empty [Measures].[AOTY Critic Reviews] on columns,
+non empty [Dim Album].[Release Day].children * [Dim Album].[Release Month].children on rows
+from [QL Album];
+--9 Slice & Dice Đếm số rating của album vào tháng 10 và tháng 12
+select non empty {[Dim Album].[Release Month].&[October],[Dim Album].[Release Month].&[December]} on rows,
+non empty [Measures].[Fact Rating Count] on columns
+from [QL Album];
+--10 Slice & Dice Đếm số review của album của nhạc sĩ là 21 Savage và nhạc sĩ là ABC 
+select non empty {[Dim Album].[Artist].&[21 Savage],[Dim Album].[Artist].&[ABC]} on rows,
+non empty [Measures].[Fact Review Count] on columns
+from [QL Album];
+--11 Slice & Dice Liệt kê tổng số review người dùng trên AOTY của album vào năm 2017, 2018 và 2019
+select non empty {[Dim Album].[Release Year].&[2017],[Dim Album].[Release Year].&[2018],[Dim Album].[Release Year].&[2019]} on rows,
+non empty [Measures].[AOTY User Reviews] on columns
+from [QL Album];
+--12 Slice & Dice Liệt kê điểm nhà phê bình lớn nhất trên metacritic của nhà thu âm là 12XU và 2 Tone
+select non empty {[Dim Album].[Label].&[12XU],[Dim Album].[Label].&[ANTI-]} on rows,
+non empty [Measures].[Maximum Metacritic Critic Score] on columns
+from [QL Album];
+--13 Pivot Đếm số review theo từng tháng
+SELECT NON EMPTY { [Measures].[Fact Review Count] } ON rows,
+NON EMPTY [Dim Album].[Release Month].children ON columns
+FROM [QL Album];
+--14 Pivot Liệt kê điểm review cao nhất theo từng album
+select non empty {[Measures].[Maximum Rating]} on rows,
+non empty [Dim Album].[Title].children on columns
+from [QL Album];
+--15  Pivot Liệt kê tổng số review nhà phê bình trên Metacritic theo từng thể loại
+select non empty {[Measures].[Metacritic Reviews]} on rows,
+non empty [Dim Album].[Genre].children on columns
+from [QL Album];
+--16 Pivot Liệt kê tổng số review người dùng trên metacritic theo từng định dạng album
+select non empty {[Measures].[Metacritic User Reviews]} on rows,
+non empty [Dim Album].[Format].children on columns
+from [QL Album];
+--------------------------------------------------------------------------------------------
+--MDX
+--17 Tổng số review nhà phê bình trên AOTY theo tên album vào năm 2009, thể loại là pop và lớn hơn 10
+select [Measures].[AOTY Critic Reviews] on columns,
+filter ([Dim Album].[Title].children,[Measures].[AOTY Critic Reviews]>10) on rows
+from [QL Album]
+where ([Dim Album].[Release Year].&[2009],[Dim Album].[Genre].&[Pop]);
+--18 Tổng số review người dùng trên metacritic theo nhạc sĩ, định dạng là LP, thể loại là Alternative Rock và lớn hơn 100 
+select [Measures].[Metacritic User Reviews] on columns,
+filter ([Dim Album].[Artist].Children,[Measures].[Metacritic User Reviews] > 100) on rows
+from [QL Album]
+where ([Dim Album].[Format].&[LP],[Dim Album].[Genre].&[Alternative Rock]);
+--19 Top 3 album có tổng số metacritic review cao nhất của nhà thu âm Warrner Bros.
+select [Measures].[Metacritic Reviews] on columns,
+topcount ([Dim Album].[Title].children,3,[Measures].[Metacritic Reviews]) on rows
+from [QL Album]
+where ([Dim Album].[Label].&[Warner Bros.]);
+--20 Đếm số lượng rating theo nhà thu âm có album vào năm 2010, định dạng là là EP 
+select [Measures].[Fact Rating Count] on columns,
+non empty [Dim Album].[Label].children on rows
+from [QL Album]
+where ([Dim Album].[Release Year].&[2010],[Dim Album].[Format].&[EP]);
+--21 Tổng số review người dùng trên AOTY theo album vào năm 2010, thể loại là Indie Rock và lớn hơn 50
+select [Measures].[AOTY User Reviews] on columns,
+non empty [Dim Album].[Title].children 
+having [Measures].[AOTY User Reviews] > 50 on rows
+from [QL Album]
+where ([Dim Album].[Genre].&[Indie Rock],[Dim Album].[Release Year].&[2010]);
+--22 Top 5 nhạc sĩ có tổng số review nhà phê bình trên metacritic vào năm 2012, thể loại là Hip hop cao nhất
+select [Measures].[Metacritic Reviews] on columns,
+topcount ([Dim Album].[Artist].children,5,[Measures].[Metacritic Reviews]) on rows
+from [QL Album]
+where ([Dim Album].[Release Year].&[2012],[Dim Album].[Genre].&[Hip Hop]);
+--23 Liệt kê số điểm nhà phê bình trên metacritic cao nhất theo từng năm của album có định dạng là EP và lớn hơn 1000
+select [Measures].[Maximum Metacritic Critic Score] on columns,
+non empty [Dim Album].[Release Year].children
+having [Measures].[Maximum Metacritic Critic Score] > 80 on rows
+from [QL Album]
+where ([Dim Album].[Format].&[EP]);
+--24 Liệt kê số điểm người dùng trên AOTY cao nhât theo nhà thu âm có album vào năm 2010, thể loại là Dubstep và nhạc sĩ là James Blake
+select [Measures].[Maximum AOTY User Score] on columns,
+non empty [Dim Album].[Label].children on rows
+from [QL Album]
+where ([Dim Album].[Genre].&[Dubstep],[Dim Album].[Release Year].&[2010],[Dim Album].[Artist].&[James Blake]);
+--25 Top 10 album có điểm của review lớn nhất trên nguồn là AllMusic, và đánh giá của review đó là Acclaim
+select [Measures].[Maximum Rating] on columns,
+non empty topcount([Dim Album].[Title].children,10,[Measures].[Maximum Rating]) on rows
+from [QL Album]
+where ([Dim Reception].[Reception].&[Acclaim],[Dim Source].[Source].&[AllMusic]);
+--26 Đếm số lượng review theo nhạc sĩ trên nguồn là Pitchfork và đánh giá của review đó là Dislike
+select [Measures].[Fact Review Count] on columns,
+non empty [Dim Album].[Artist].children on rows
+from [QL Album]
+where ([Dim Reception].[Reception].&[Dislike],[Dim Source].[Source].&[Pitchfork]);

@@ -1,0 +1,916 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9abf9c2c-8d3f-4604-abad-24d6911daa01" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>QL Album</ID>
+  <Name>QL Album</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="40" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5304" scrolltop="2735" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="17410" y="8555" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" left="3336" top="17151" logicalid="20" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1535" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000ff050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Format" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Genre" left="11436" top="9281" logicalid="21" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="1535" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000ff050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Genre" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" left="20" top="0" logicalid="22" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="1535" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000ff050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Reception" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Time" left="636" top="10896" logicalid="23" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="2240" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000c0080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Time" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" left="8736" top="17151" logicalid="24" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="1535" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000ff050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Artist" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Fact_Review" left="20" top="3935" logicalid="25" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="2946" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000820b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Fact_Review" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Album" left="6036" top="10367" logicalid="26" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="3298" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000e20c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Album" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Source" left="5420" top="4640" logicalid="27" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="1535" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000ff050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Source" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Label" left="11436" top="13216" logicalid="28" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="1535" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000ff050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Label" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Fact_Rating" left="10820" top="2524" logicalid="29" controlid="10" masterid="0" hint1="0" hint2="0" width="4233" height="4357" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008910000005110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Fact_Rating" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4437" top="13365" logicalid="30" controlid="11" masterid="0" hint1="0" hint2="0" width="2299" height="4286" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Dim_Album-Dim_Format]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="7" sourceattachpoint="4" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4836" y="17151" />
+              <point x="4836" y="15408" />
+              <point x="6436" y="15408" />
+              <point x="6436" y="13665" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8736" top="9649" logicalid="31" controlid="12" masterid="0" hint1="0" hint2="0" width="3000" height="1567" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Dim_Album-Dim_Genre]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="7" sourceattachpoint="12" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11436" y="10048" />
+              <point x="10236" y="10048" />
+              <point x="10236" y="10916" />
+              <point x="9036" y="10916" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1121" top="1036" logicalid="32" controlid="13" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Fact_Review-Dim_Reception]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="6" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1520" y="1535" />
+              <point x="1520" y="3935" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3336" top="11617" logicalid="33" controlid="14" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Dim_Album-Dim_Time]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="7" sourceattachpoint="13" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3636" y="12016" />
+              <point x="6036" y="12016" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7786" top="13365" logicalid="34" controlid="15" masterid="0" hint1="0" hint2="0" width="2850" height="4286" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Dim_Album-Dim_Artist]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="7" sourceattachpoint="4" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="10236" y="17151" />
+              <point x="10236" y="15408" />
+              <point x="8086" y="15408" />
+              <point x="8086" y="13665" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1220" top="6581" logicalid="35" controlid="16" masterid="0" hint1="0" hint2="0" width="5616" height="4286" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Fact_Review-Dim_Album]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="6" sourceattachpoint="0" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6436" y="10367" />
+              <point x="6436" y="8624" />
+              <point x="1520" y="8624" />
+              <point x="1520" y="6881" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="5008" logicalid="36" controlid="17" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Fact_Review-Dim_Source]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="6" sourceattachpoint="12" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5420" y="5407" />
+              <point x="4220" y="5407" />
+              <point x="4220" y="5408" />
+              <point x="3020" y="5408" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8736" top="12266" logicalid="37" controlid="18" masterid="0" hint1="0" hint2="0" width="3000" height="2117" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Dim_Album-Dim_Label]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="7" sourceattachpoint="12" destattachpoint="17" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11436" y="13983" />
+              <point x="10236" y="13983" />
+              <point x="10236" y="12566" />
+              <point x="9036" y="12566" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7687" top="6581" logicalid="38" controlid="19" masterid="0" hint1="0" hint2="0" width="5549" height="4286" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Fact_Rating-Dim_Album]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="10" sourceattachpoint="6" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8086" y="10367" />
+              <point x="8086" y="8624" />
+              <point x="12936" y="8624" />
+              <point x="12936" y="6881" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-5304</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>2735</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="ef573866-db4a-4ed0-b35d-5fe0a7bbad5a">
+      <ID>Dim Album</ID>
+      <Name>Dim Album</Name>
+      <DimensionID>Dim Album</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c9b706cd-9a0b-4b02-a30f-f97f0617a3f1">
+          <AttributeID>Album Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="171cc427-f803-4e15-8509-833e00188169">
+          <AttributeID>Artist Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="41d8d9f3-5a74-4ee6-8c3e-f9eb0d8ae018">
+          <AttributeID>Format Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3428b29b-9e23-4b42-ae8f-43c814c733ab">
+          <AttributeID>Genre Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="eb88c2f8-eb70-443d-af1d-2d37c1d84f19">
+          <AttributeID>Label Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="676b05f3-32c0-4b62-9e83-17e35757bdc3">
+          <AttributeID>Time Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f980c247-7e11-4e46-b5aa-d5143a57da67">
+          <AttributeID>Release Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="09740552-2d5a-48c8-afed-20f548f135fc">
+          <AttributeID>Release Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9268ba04-3f38-4145-9ce9-39e2649bfd69">
+          <AttributeID>Release Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8874186b-be7d-43e5-a093-2cde868e9fca">
+          <AttributeID>Genre</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="82fcabb5-3289-4513-8611-d1e5eacb0409">
+          <AttributeID>Artist</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cb455b25-b200-4498-bebd-4e18eec383ca">
+          <AttributeID>Format</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="358a869c-909a-4e67-82b3-f405e83f0385">
+          <AttributeID>Label</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0ce36b3c-0842-41c5-a69c-6c013a31b5e6">
+          <AttributeID>Title</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="78d6a221-3441-4681-9b96-74529c1b2570">
+      <ID>Fact Review</ID>
+      <Name>Fact Review</Name>
+      <DimensionID>Fact Review</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="599b498c-d363-4342-bf58-994944cf1bb0">
+          <AttributeID>Review Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2b4642f6-11a7-490a-a364-e6c488a1fc8d">
+          <AttributeID>Album Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c56d2d84-aa29-4a94-bd49-e10988042081">
+          <AttributeID>Source Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8a2cb815-b64f-40d0-ac39-bfa01cbe60bb">
+          <AttributeID>Reception Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="26efac4e-3ad3-4323-b781-d79a56622e09">
+          <AttributeID>Rating</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="aa4b6e2c-8ce9-4437-bfd6-ac22db20cc79">
+          <AttributeID>Review</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d1880300-9860-4751-9b88-edb8eb894375">
+      <ID>Dim Source</ID>
+      <Name>Dim Source</Name>
+      <DimensionID>Dim Source</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2b75e65e-42e8-4ac0-ad7b-f1cfdfb8a458">
+          <AttributeID>Source Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c2952161-9de1-498e-a514-c5957a497c5b">
+          <AttributeID>Source</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="4b96f9c7-7639-4d55-9c2e-ed074420b993">
+      <ID>Dim Reception</ID>
+      <Name>Dim Reception</Name>
+      <DimensionID>Dim Reception</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="70b384ff-33d5-482f-96b5-f1f87d7b31a7">
+          <AttributeID>Reception Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="073d6f78-ce25-4b47-aa78-2d6a0d07aa2b">
+          <AttributeID>Reception</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="f300bce8-61c2-48a5-afe6-394c63f3de1b">
+      <ID>Fact Rating</ID>
+      <Name>Fact Rating</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="90955c19-773f-4e5e-9941-e6fa410c249a">
+          <ID>Metacritic Critic Score</ID>
+          <Name>Metacritic Critic Score</Name>
+          <Source dwd:design-time-name="ed7a9c42-2b32-45e2-8280-460f65a4b216">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fcfe1073-a592-4fcb-b908-d4c0dc6561ed">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>Metacritic_x0020_Critic_x0020_Score</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="79a404ff-6ed2-42d8-a278-2d9a4b579b99">
+          <ID>Metacritic Reviews</ID>
+          <Name>Metacritic Reviews</Name>
+          <Source dwd:design-time-name="5d032a2b-8958-4867-946b-320b86e2bdac">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="74f2a2d6-d581-481d-98ef-7041ec93a3b9">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>Metacritic_x0020_Reviews</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3c7d5810-28c4-4a75-96fd-1f2e8f16d649">
+          <ID>Metacritic User Score</ID>
+          <Name>Metacritic User Score</Name>
+          <Source dwd:design-time-name="afb958bc-e215-4163-842b-f1839dac4a48">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d4519372-5aa8-4b88-9f4c-04067680cd24">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>Metacritic_x0020_User_x0020_Score</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9bc0fb0b-a0fd-451f-baab-21a1ea6ce1c0">
+          <ID>Metacritic User Reviews</ID>
+          <Name>Metacritic User Reviews</Name>
+          <Source dwd:design-time-name="707e12f2-3ce5-41da-9aec-d930542cca4e">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="230cde2b-f018-4a7a-892b-5fe8ce4d7590">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>Metacritic_x0020_User_x0020_Reviews</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="89de350a-4ffb-42aa-b848-dbc5d0d6f30a">
+          <ID>AOTY Critic Score</ID>
+          <Name>AOTY Critic Score</Name>
+          <Source dwd:design-time-name="fdf816a3-feb5-44ea-98b9-c6ae19ea4966">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="30f05bde-38f8-4c23-9434-68e3863c0cfd">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>AOTY_x0020_Critic_x0020_Score</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f8433df5-d0f6-481c-8e1b-96416eec8e95">
+          <ID>AOTY Critic Reviews</ID>
+          <Name>AOTY Critic Reviews</Name>
+          <Source dwd:design-time-name="8372fa07-eb06-4623-b963-bfa920243bd6">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ca3fcc6f-ff49-49fd-b06a-8607240202f9">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>AOTY_x0020_Critic_x0020_Reviews</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1d085321-f025-4284-9aaa-bfcb412f7b30">
+          <ID>AOTY User Score</ID>
+          <Name>AOTY User Score</Name>
+          <Source dwd:design-time-name="527398fd-8993-4b66-b53c-2681a21f2b40">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ee742dba-57e4-4ca5-b43d-bcb0b998e552">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>AOTY_x0020_User_x0020_Score</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3c6ee73b-0902-4fac-a421-0756ca1fdf78">
+          <ID>AOTY User Reviews</ID>
+          <Name>AOTY User Reviews</Name>
+          <Source dwd:design-time-name="dcc1f36f-dad5-4659-a0e4-870d81504206">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0678023d-e04c-4b51-b5cf-3ead7c9d4c6e">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>AOTY_x0020_User_x0020_Reviews</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4e3deef9-ce27-416f-9017-63584fe1ecc1">
+          <ID>Fact Rating Count</ID>
+          <Name>Fact Rating Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="8b351c58-481a-4425-814e-a96a4fefdcfb">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="19ec2a8d-2606-489c-a0bc-debc57ca5296">
+              <TableID>dbo_Fact_Rating</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5ced979e-4bee-4da6-a2e6-4712b946c278">
+          <ID>Minimum Metacritic Critic Score</ID>
+          <Name>Minimum Metacritic Critic Score</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source dwd:design-time-name="97b0d726-ccfe-46f3-ab1f-d37dad7d7268">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="66a4a3e2-5d60-4dba-9a26-ea95cd3cec90">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>Metacritic_x0020_Critic_x0020_Score</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3f241e9d-7862-49cc-bf83-5c5c3418f6de">
+          <ID>Maximum Metacritic Critic Score</ID>
+          <Name>Maximum Metacritic Critic Score</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <Source dwd:design-time-name="43ebbd2a-7248-4694-a3ed-c28627bb90d7">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a8392849-0d6d-42bf-9ddd-20db028481c9">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>Metacritic_x0020_Critic_x0020_Score</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="81c912f0-ac00-4ea4-b566-cb27f3949f5d">
+          <ID>Minimum Metacritic Reviews</ID>
+          <Name>Minimum Metacritic Reviews</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source dwd:design-time-name="b3904a8e-d84c-41e2-bcb4-124a81b25e41">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="72f33e0c-3f1b-4c4c-a0a3-cc03e07c91f7">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>Metacritic_x0020_Reviews</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="977ca015-81f8-474e-ad09-090e98afb252">
+          <ID>Maximum Metacritic Reviews</ID>
+          <Name>Maximum Metacritic Reviews</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <Source dwd:design-time-name="b8f46284-02b4-477e-9c3e-2af394cfa915">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6499d98d-7664-4b32-8909-a0295680673f">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>Metacritic_x0020_Reviews</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="db0e3fb9-2846-42b3-b3a7-9293e78dfc42">
+          <ID>Minimum Metacritic User Score</ID>
+          <Name>Minimum Metacritic User Score</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source dwd:design-time-name="a6380e9c-57a3-47e2-adc5-e89ca597f2a3">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="679ae632-1710-4fd0-8acd-9fd6a3851f36">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>Metacritic_x0020_User_x0020_Score</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b097aa71-5e40-4e92-baeb-9cc40a913754">
+          <ID>Maximum Metacritic User Score</ID>
+          <Name>Maximum Metacritic User Score</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <Source dwd:design-time-name="ce47febc-3520-4935-9cd5-45c98c070e0f">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="53114da7-913d-4295-9f6f-3a9e24838623">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>Metacritic_x0020_User_x0020_Score</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0ac901cd-71f7-4c5c-bd75-9019e0605af4">
+          <ID>Minimum Metacritic User Reviews</ID>
+          <Name>Minimum Metacritic User Reviews</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source dwd:design-time-name="4f0ca4e2-9ee8-493d-8329-9d25573559b2">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6a3c405d-b611-416e-a22f-e7762171848c">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>Metacritic_x0020_User_x0020_Reviews</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="82825949-50d8-4596-bb4a-e9fd2069badd">
+          <ID>Maximum Metacritic User Reviews</ID>
+          <Name>Maximum Metacritic User Reviews</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <Source dwd:design-time-name="0e83b70a-ea9e-43e2-80c4-e5e6e92a13f3">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2c71ab97-22ea-4074-8f1c-53457f8d0de5">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>Metacritic_x0020_User_x0020_Reviews</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3b48cc6a-bf66-419e-8432-c268143b5365">
+          <ID>Minimum AOTY Critic Score</ID>
+          <Name>Minimum AOTY Critic Score</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source dwd:design-time-name="b483f6b8-0215-4ff8-858d-14fd207e4aee">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1789965c-c5a0-4ab7-b4d9-03669d4c23c6">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>AOTY_x0020_Critic_x0020_Score</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4ff0ab6f-ceb1-48fb-b3d2-0a1e7f9924e2">
+          <ID>Maximum AOTY Critic Score</ID>
+          <Name>Maximum AOTY Critic Score</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <Source dwd:design-time-name="d67a0e22-869f-472d-a53b-97e30adb40eb">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="63d8648d-0855-4959-bcaa-7646dd210603">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>AOTY_x0020_Critic_x0020_Score</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="382bc246-8371-4a2b-a8d2-6b7a9f2b0be0">
+          <ID>Minimum AOTY Critic Reviews</ID>
+          <Name>Minimum AOTY Critic Reviews</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <Source dwd:design-time-name="5e1db7d9-1f7f-4877-9697-20aa03294ccb">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2c737efd-092d-4a98-9eaf-2aa3a1e04f7f">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>AOTY_x0020_Critic_x0020_Reviews</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c9bf294c-76f0-4a1a-96a6-f2d1c3ce0ec3">
+          <ID>Maximum AOTY Critic Reviews</ID>
+          <Name>Maximum AOTY Critic Reviews</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <Source dwd:design-time-name="da7d405b-c76f-4fdd-baac-d4a1a7610717">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="523e2f94-0439-4797-87a0-e72908908fe9">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>AOTY_x0020_Critic_x0020_Reviews</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bc072812-5e1c-4d71-b531-bba82238a974">
+          <ID>Minimum AOTY User Score</ID>
+          <Name>Minimum AOTY User Score</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source dwd:design-time-name="66b610c0-3b45-41b0-93dd-50a47d7d6381">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d21297e0-4cac-4e97-ac6f-8e5fbe8664a2">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>AOTY_x0020_User_x0020_Score</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="43ceb70e-60a0-4509-80dd-85d7c3848c72">
+          <ID>Maximum AOTY User Score</ID>
+          <Name>Maximum AOTY User Score</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <Source dwd:design-time-name="c0cbe4e3-1b77-4fa9-98ed-bd60eeda1061">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="dcb19197-e494-4079-a779-1defebe6255a">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>AOTY_x0020_User_x0020_Score</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e3580204-332a-48b5-baa4-c1341113bdf6">
+          <ID>Minimum AOTY User Reviews</ID>
+          <Name>Minimum AOTY User Reviews</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source dwd:design-time-name="67af513d-38f7-4745-b373-1142ef55c5b4">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1e369584-c9a6-4dfe-8246-e129456dca48">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>AOTY_x0020_User_x0020_Reviews</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4032450e-6529-4439-b682-7e6149e0ca9f">
+          <ID>Maximum AOTY User Reviews</ID>
+          <Name>Maximum AOTY User Reviews</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <Source dwd:design-time-name="92e991b7-65c0-4d1d-a591-8a36d4572343">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8a60eda9-77b1-4bbd-a14a-d3ba54bb574c">
+              <TableID>dbo_Fact_Rating</TableID>
+              <ColumnID>AOTY_x0020_User_x0020_Reviews</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="76903f2b-79e9-4ec3-bf25-46316d02110d">
+          <CubeDimensionID>Dim Album</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="dfb64d76-a1fd-4a35-9424-15053352b839">
+              <AttributeID>Album Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="00312dc3-c639-4a77-a2ce-3f52a1e4c625">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="686c04b4-66d4-463d-b1e3-dbea2958197d">
+                    <TableID>dbo_Fact_Rating</TableID>
+                    <ColumnID>Album_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="427063d2-c7a4-4403-bad5-a49e39ba7759">
+      <ID>Fact Review</ID>
+      <Name>Fact Review</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="d2fe2d6a-3f8b-4dbb-bc3b-c12ab2940277">
+          <ID>Rating</ID>
+          <Name>Rating</Name>
+          <Source dwd:design-time-name="4f48ff8b-c5d3-48f2-97fd-08aae7c84071">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="045964d7-058c-4a4b-931b-4894db41c8c0">
+              <TableID>dbo_Fact_Review</TableID>
+              <ColumnID>Rating</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8c9c6c81-cdf2-406f-a616-e11541130f4f">
+          <ID>Fact Review Count</ID>
+          <Name>Fact Review Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="29115039-c9ab-4276-9315-2af6e4488f80">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="768101ab-15c0-40f3-bd53-5bb75c0b2006">
+              <TableID>dbo_Fact_Review</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="523a17d5-e75b-4790-9fd6-aba975b93086">
+          <ID>Minimum Rating</ID>
+          <Name>Minimum Rating</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source dwd:design-time-name="caa86ad9-4577-4342-a285-336885823e28">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="371728aa-d19d-48a4-bc0a-ac40d6e395d1">
+              <TableID>dbo_Fact_Review</TableID>
+              <ColumnID>Rating</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b5156bef-b92a-4e2e-9cfa-cd594eb0ed8b">
+          <ID>Maximum Rating</ID>
+          <Name>Maximum Rating</Name>
+          <AggregateFunction>Max</AggregateFunction>
+          <Source dwd:design-time-name="0cf8062c-2c73-4501-b7d9-ff4d6985f23f">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b8e3e910-12d1-4260-9098-6401c8c91e3e">
+              <TableID>dbo_Fact_Review</TableID>
+              <ColumnID>Rating</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="7b5cc705-94de-48ad-b173-56fca720732c">
+          <CubeDimensionID>Fact Review</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ca5f219d-6f02-4391-8496-86c30a9b7e4b">
+              <AttributeID>Review Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9e1a7176-547a-409e-b469-8fe5cad65f2f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f59f24c5-0915-4335-9697-ed2ba6482c4c">
+                    <TableID>dbo_Fact_Review</TableID>
+                    <ColumnID>Review_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5334df67-7c7b-47e7-af30-c1ca3432aa6e">
+          <CubeDimensionID>Dim Album</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="802569f9-1cc7-4535-b683-3cb540d9a3ff">
+              <AttributeID>Album Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1da367f3-daa0-47b7-a209-b216308ed19a">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7b316d88-356a-43f0-ba63-30947edd7d20">
+                    <TableID>dbo_Fact_Review</TableID>
+                    <ColumnID>Album_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0670e320-025f-4a89-85f0-1c332ca78dc4">
+          <CubeDimensionID>Dim Source</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f56e400b-161d-4eef-a462-cbea46c79b3f">
+              <AttributeID>Source Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6f02af4e-2aaa-4793-b9a5-3fc6b815314e">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fd1bf844-a17d-4458-a3d1-3d520182f9f2">
+                    <TableID>dbo_Fact_Review</TableID>
+                    <ColumnID>Source_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4bd492a4-621d-4710-8332-b2f4e31327e0">
+          <CubeDimensionID>Dim Reception</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c93c7173-fbf9-46dd-821b-559d2311d6cb">
+              <AttributeID>Reception Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a62a4744-fa85-4fbe-a430-6f780efde786">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="46b35e30-6893-4594-b2a1-4d13353fcc60">
+                    <TableID>dbo_Fact_Review</TableID>
+                    <ColumnID>Reception_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="44904280-b9d8-4c3b-8067-e6d571ffa67f">
+    <DataSourceViewID>QL Album</DataSourceViewID>
+  </Source>
+</Cube>

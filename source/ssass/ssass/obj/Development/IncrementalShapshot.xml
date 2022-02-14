@@ -1,0 +1,96 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>ssass</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>PW4DWUEnVSpaBXgI3BMKScsvAXo=6/22/2021 8:43:16 AM6/22/2021 8:23:25 AM</TimeStamp>
+        <ID>
+          <String>QL Album</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>JPjTOgW/0TFHLlrcD+RqsUdB/tc=6/22/2021 8:24:41 AM6/22/2021 8:24:41 AM</TimeStamp>
+        <ID>
+          <String>QL Album</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>tdagMGHgYLyVPC/J+1hjsf06Rq8=6/22/2021 8:26:26 AM6/22/2021 8:25:08 AM</TimeStamp>
+        <ID>
+          <String>Dim Album</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>pK9SVYtCny4Wxs29dHVQ1LoGiK4=6/22/2021 8:26:26 AM6/22/2021 8:25:08 AM</TimeStamp>
+        <ID>
+          <String>Dim Source</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>SfwfDORoN3U9s0V4iPPfOst/AH4=6/22/2021 8:26:26 AM6/22/2021 8:25:09 AM</TimeStamp>
+        <ID>
+          <String>Dim Reception</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>EnCyZaHHJcOjxLNn11RcgbS7/9Q=6/22/2021 8:26:26 AM6/22/2021 8:25:09 AM</TimeStamp>
+        <ID>
+          <String>Fact Review</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>ru/SwCXbsTDkyE9dts9vXZAIGa4=6/25/2021 9:25:36 AM6/22/2021 8:25:08 AMSBwgejhO9rpQwJz5s1PB738g9zg=6/25/2021 9:25:36 AM6/22/2021 8:25:08 AM</TimeStamp>
+        <ID>
+          <String>QL Album</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>vMRnHkAx5NfGx4Le/JM/QUysLLY=6/25/2021 2:06:25 PM6/25/2021 2:06:25 PM</TimeStamp>
+        <ID>
+          <String>Fact Review</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>sIR0+NVCi+3/bTG6sNyZJd3IyLc=6/25/2021 3:10:14 PM6/25/2021 3:10:10 PM</TimeStamp>
+        <ID>
+          <String>Fact Rating</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>w/esnt2PYVMvkXf90tdQg+IVpnE=5/28/2021 2:39:59 PM5/28/2021 2:39:59 PM</TimeStamp>
+      <ID>
+        <String>ssass</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2021-06-29T13:30:06.576667Z</LastDeployed>
+</DeploymentSnapshot>

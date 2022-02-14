@@ -1,0 +1,176 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4fb3f35f-dece-4e4d-b9b9-bc791ee70344" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Fact Rating</ID>
+  <Name>Fact Rating</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_Fact_Rating</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="8db60d37-f972-4d2c-bdbf-eba981d6d4c8">
+    <DataSourceViewID>QL Album</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="96dc7dc4-26a3-4b25-9fe0-a42866ef441e">
+      <ID>Metacritic Critic Score</ID>
+      <Name>Metacritic Critic Score</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="256e07ea-6cde-44a8-ae62-bb46c584da56">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6756a013-dcb2-42bd-b65a-3ac26119c488">
+            <TableID>dbo_Fact_Rating</TableID>
+            <ColumnID>Metacritic_x0020_Critic_x0020_Score</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c5c58e8c-c5bb-49d8-b475-a2a1a32cad5e">
+      <ID>Metacritic Reviews</ID>
+      <Name>Metacritic Reviews</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="44fe5ed5-a2a7-4197-8c78-d00d3619bb5e">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="70a360cf-dca6-42cd-892d-079354d68bc0">
+            <TableID>dbo_Fact_Rating</TableID>
+            <ColumnID>Metacritic_x0020_Reviews</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="78261c37-52e4-454c-9370-67d6e0d4eff3">
+      <ID>Metacritic User Reviews</ID>
+      <Name>Metacritic User Reviews</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ad632d1f-1788-45cd-9948-2f93c7563243">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a0359cff-8aac-4af6-afe6-ace6549130e2">
+            <TableID>dbo_Fact_Rating</TableID>
+            <ColumnID>Metacritic_x0020_User_x0020_Reviews</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="443a1d28-d7c8-43fa-bd47-4605e0fe4260">
+      <ID>Metacritic User Score</ID>
+      <Name>Metacritic User Score</Name>
+      <Type>Double</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b038e93e-dbe0-4e59-96df-9235c670bb98">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cbd3faef-2273-483f-a8d2-20a64c4b8450">
+            <TableID>dbo_Fact_Rating</TableID>
+            <ColumnID>Metacritic_x0020_User_x0020_Score</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="32ce3832-444f-4d68-acbc-57c383c6a7e4">
+      <ID>Rating Id</ID>
+      <Name>Rating Id</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4d9ad205-b969-40d4-965d-77c607452f3b">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="329487f9-bf1e-4e24-8267-572793b0bb1f">
+            <TableID>dbo_Fact_Rating</TableID>
+            <ColumnID>Rating_Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="ccff6a4a-7bd9-474d-94c9-b8a8042f1176">
+      <ID>Fact Rating</ID>
+      <Name>Fact Rating</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="b2ba3d9f-b5a9-465e-9823-0364eca31e23">
+          <ID>Metacritic Critic Score</ID>
+          <Name>Metacritic Critic Score</Name>
+          <SourceColumnID>Metacritic Critic Score</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="9e029efd-2efa-4d06-aead-6ada6d525ffc">
+          <ID>Metacritic Reviews</ID>
+          <Name>Metacritic Reviews</Name>
+          <SourceColumnID>Metacritic Reviews</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b00118a7-a24c-4a12-9602-88c3484c866d">
+          <ID>Metacritic User Reviews</ID>
+          <Name>Metacritic User Reviews</Name>
+          <SourceColumnID>Metacritic User Reviews</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="715d03e0-c05d-4244-8713-0baedfb342c1">
+          <ID>Metacritic User Score</ID>
+          <Name>Metacritic User Score</Name>
+          <SourceColumnID>Metacritic User Score</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="bdb93ead-8827-41a6-97d5-005100e16685">
+          <ID>Rating Id</ID>
+          <Name>Rating Id</Name>
+          <SourceColumnID>Rating Id</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>
